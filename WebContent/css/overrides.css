@@ -1,0 +1,4 @@
+/* ios-specific */
+body, #mainmenu, #submenu {
+	margin-top: 20px;
+}

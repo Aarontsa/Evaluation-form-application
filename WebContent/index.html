@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Evaluation</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=no, minimum-scale=1, maximum-scale=1">
+<link href="css/app.css" rel="stylesheet">
+<!--<link href="css/overrides.css" rel="stylesheet"> -->
+<link rel="stylesheet" type="text/css" href="./css/TrainingEvaluationFrom.css">
+
+</head>
+<body>
+	<!-- ****** course-Pick ****** -->
+	<script id="coursesPick" type="text/template">
+
+	<div>
+		<div id="navbar">
+ 			<a class="Adminlink" id="linkadminlogin" style="float:right">Admin login</a> 
+			<a hidden class="" id=""><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+			
+		</div>
+<br>
+
+	<div class="main">
+			<h3 class="descriptionAction">Please select a course below and give us your feedback. Your
+				opinion is very important to us.</h3>
+				
+<div  class="pickdatebackground">
+<p>Search:</p>
+
+<div class="FristFilter"><ol class="BackgroundColorFilter"><li style="list-style-type: none">
+		Year:<br>
+		<select name="pickyear" id="pickyear" class="pickyearsize">
+		<option value="">--</option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option></select>
+		</li></ol></div>
+<div class="SecondFilter"><ol class="BackgroundColorFilter"><li style="list-style-type: none">
+		Month:<br>
+		<select name="pickmonth" id="pickmonth" class="pickmonthsize">
+		<option value="">--</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option></select>
+		</li></ol></div>
+<div class="ThirdFilter"><ol class="BackgroundColorFilter"><li style="list-style-type: none">
+		Day:<br>
+		<select name="pickday" id="pickday" class="pickdaysize">
+        <option value="">--</option>
+	    <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="05">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option></select>
+		</li></ol></div>
+
+<ol class="BackgroundColorFilter"><li style="list-style-type: none">
+		<div class="FourthFilter">
+					<div class="btnfilterposition">
+						<div name="btnAdminXLog" id="btnCancelFilter" class="btn_secondary">
+						<a>Clear</a></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+						<div name="btnAdminLogin" id="imgbtnfilterYMD" class="btn_primary">
+						<a>Filter</a></div>
+					</div>
+
+		</li></ol></div>
+
+</div>
+<br>
+    			
+			<div id="contner-block" class="contner-blockportrait">
+				<div id="contner-block" class="contner-blockportrait"></div>
+				</div>
+			</div>
+		</div>	
+
+			<!-- popup login form -->
+			<div id="AdminpopUp" class="popOverlay">
+				<div id="AdminpopLogin" class="poploginportrait">
+					<a class="active" id="btnAdminClose"><img class="btnpatternClose" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please enter your Admin
+						account to authenticate the submission.</h3>
+					<span id="errmsg"></span><span id="errmsgs"></span> <br /> <label>Admin No. :  </label> <input
+						type="text" spellcheck="false" autocomplete="off" autocorrect="off"
+						id="Admin_no" name="Admin_no" value=""
+						placeholder="e.g 550133" /> <br /> <br /> <label>Passwords
+						 : </label> <input type="text" spellcheck="false" autocomplete="off"
+						autocorrect="off" id="password" name="password" value=""
+						placeholder="e.g 901103075634" /><br /> <br />
+					<div class="btnpopupposition">
+						<div name="btnAdminXLog" id="btnAdminXLog" class="btn_secondary">
+						<a>Cancle</a></div>&nbsp; 
+						<div name="btnAdminLogin" id="btnAdminLogin" class="btn_primary">
+						<a>Submit</a></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- popup alert answers all question -->
+			<div id="popupAlertAnswersAll" class="popOverlayAlert">
+				<div id="popupAnswersAll" class="popupAlertAnswersAllportrait">
+					<a class="active" id="btnCloseAlertAnswersAll"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please complete all the questions.</h3>
+					
+
+				</div>
+			</div>
+			
+						
+			<!-- popup alert wrong password-->
+			<div id="popupAlertWrongPassword" class="popOverlayAlert">
+				<div id="popupWrongPassword" class="popupAlertWrongPasswordportrait">
+					<a class="active" id="btnCloseAlertWrongPassword"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Invalid Employee ID or Identity
+						Card.</h3>
+					
+
+				</div>
+			</div>
+			
+						
+			<!-- popup alert insert passwords -->
+			<div id="popUpAlertInsertPassword" class="popOverlayAlert">
+				<div id="popUpInsertPassword" class="popUpAlertInsertPasswordportrait">
+					<a class="active" id="btnCloseAlertInsertPassword"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br> 
+					<h3 class="txtblack">Please insert Employee ID and Identity
+						Card.</h3>
+					
+
+				</div>
+			</div>
+			
+			<!-- popup alert Fill all question -->
+			<div id="popupAlertFillAll" class="popOverlayAlert">
+				<div id="popupFillAll" class="popupAlertFillAllportrait">
+					<a class="active" id="btnCloseAlertFillAll"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please complete all section.</h3>
+					
+
+				</div>
+			</div>
+
+
+		</div>
+	</script>
+	
+
+		<!-- ****** course-Position ****** -->
+	<script id="coursesPosition" type="text/template">
+		<div>
+		<div id="navbar">
+			<a class="" id="backtocoursespickpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+<br>
+<div class="main">
+<form>
+<div id="btnCenter">
+<div name="btnParticipant" id="btnParticipant" class="btn_primary"><a>Participant</a></div><br><br><br><br>
+<div  id="btnSupervisor" name="btnSupervisor" class="btn_primary"><a>Supervisor</a></div><br><br><br><br>
+<br><br><br>
+<div  id="btnXposition" name="btnXposition" class="btn_secondary"><a>Back</a></div>
+</div>
+
+</form>
+</div>
+		</div>
+	</script>
+	
+		<!-- ****** course-Position-Admin ****** -->
+	<script id="coursesPositionAdmin" type="text/template">
+		<div>
+		<div id="navbar">
+			<a class="" id="backtocoursespickpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+<br>
+<div class="main">
+<form id="btnAdminposition">
+<div id="btnCenter">
+<div name="btnCreate" id="btnCreate" class="btn_primary"><a >Create</a></div><br><br><br><br>
+<div name="btnReport" id="btnReport" class="btn_primary"><a >Report</a></div><br><br><br><br>
+<div name="btnReportsummary" id="btnReportsummary" class="btn_primary"><a > Report Summary</a></div><br><br><br><br>
+<br><br><br>
+<div  id="btnXAdminposition" name="btnXAdminposition" class="btn_secondary"><a>Log out</a></div>
+</div>
+</form>
+</div>
+		</div>
+	</script>
+	
+			<!-- ****** course-Add ****** -->
+	<script id="coursesAdd" type="text/template">
+		<div>
+		<div id="navbar">
+			<a class="" id="backtocoursespickpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+<br>
+<h3 class="">Create Courses</h3>
+
+<div class="Addcourses" action="">
+<table id="Addcoursestablesize"><tr>
+<td><label class="labelposition"><center>Admin ID :</center> </label></td><td> <input type="text" id="AddEmployee_no" class="textboxsize" name="AddEmployee_no" value="" placeholder="e.g 550133" disabled/> <br></td>
+</tr><tr>
+<td><label class="labelposition"><center>Course Title:</center> </label></td><td> <input type="text" id="CreateCoursesTitle" name="CreateCoursesTitle" value="" placeholder="e.g Project Management" /> <br></td>
+</tr><tr>
+<td><label class="labelposition"><center>Course Venue:</center> </label></td><td>  <input type="text" id="CreateCoursesVenue" name="CreateCoursesVenue" value="" placeholder="e.g B10/Chengal 2" /> <br></td>
+</tr><tr>
+<td><label class="labelposition"><center>Start Time:</center> </label></td><td>   <table class="pickdatetable">
+<tr><td>Hours:</td>
+	<td>Minutes:</td>
+</tr>
+<tr><td><select name="coursesAddStartHours" id="coursesAddStartHours" class="pickmonthsize">
+        <option value="">--</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+    	</select></td>
+    <td><select name="coursesAddStartMinutes" id="coursesAddStartMinutes" class="pickdaysize">
+        <option value="">--</option>
+        <option value=":00:00">00</option>
+        <option value=":15:00">15</option>
+        <option value=":30:00">30</option>
+        <option value=":45:00">45</option>
+    	</select></td>
+</tr>		
+</table><br></td>
+</tr><tr>
+<td><label class="labelposition"><center>End Time:</center> </label></td><td>  <table class="pickdatetable">
+<tr><td>Hours:</td>
+	<td>Minutes:</td>
+</tr>
+<tr><td><select name="coursesAddEndHours" id="coursesAddEndHours" class="pickmonthsize">
+        <option value="">--</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+    	</select></td>
+    <td><select name="coursesAddEndMinutes" id="coursesAddEndMinutes" class="pickdaysize">
+        <option value="">--</option>
+        <option value=":00:00">00</option>
+        <option value=":15:00">15</option>
+        <option value=":30:00">30</option>
+        <option value=":45:00">45</option>
+    	</select></td>
+</tr>		
+</table>  <br></td>
+</tr><tr>
+<td><label class="labelposition"><center>Course Date:</center> </label></td><td>   <table class="pickdatetable">
+<tr><td>Year:</td>
+	<td>Month:</td>
+	<td>Day:</td>
+</tr>
+<tr><td><select name="coursesAddYear" id="coursesAddYear" class="pickyearsize">
+        <option value="">--</option>
+        <option value="2018-">2018</option>
+        <option value="2019-">2019</option>
+<!--         <option hidden value="2020">2020</option> -->
+    	</select></td>
+    <td><select name="coursesAddMonth" id="coursesAddMonth" class="pickmonthsize">
+        <option value="">--</option>
+        <option value="01-">January</option>
+        <option value="02-">February</option>
+        <option value="03-">March</option>
+        <option value="04-">April</option>
+        <option value="05-">May</option>
+        <option value="06-">June</option>
+        <option value="07-">July</option>
+        <option value="08-">August</option>
+        <option value="09-">September</option>
+        <option value="10-">October</option>
+        <option value="11-">November</option>
+        <option value="12-">December</option>
+    	</select></td>
+    <td><select name="coursesAddDay" id="coursesAddDay" class="pickdaysize">
+        <option value="">--</option>
+        <option value="01">1</option>
+        <option value="02">2</option>
+        <option value="03">3</option>
+        <option value="04">4</option>
+        <option value="05">5</option>
+        <option value="06">6</option>
+        <option value="07">7</option>
+        <option value="08">8</option>
+        <option value="09">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+    	</select></td>
+</tr>		
+</table><br></td>
+</tr>
+<tr>
+<td><label class="labelposition"><center>Course Trainer:</center> </label></td><td>  <input type="text" id="CreateCoursesTrainer" name="CreateCoursesTrainer" value="" placeholder="e.g Mr. Jason Tan" /> <br></td>
+</tr></table>
+<br> <br>
+<div id="btnCenter">
+<br>
+<br>
+<div name="btnCancelcreate" id="btnCancelcreate" class="btn_secondary"><a>Cancle</a></div>&nbsp;
+<div name="btnSubmitcreate" id="btnSubmitcreate" class="btn_primary"><a ></a>Submit</div>
+</div>
+<input  type="hidden" id="CreateCoursesStartTime" name="CreateCoursesStartTime" value="" /> 
+<input  type="hidden" id="CreateCoursesEndTime" name="CreateCoursesEndTime" value=""  /> 
+<input  type="hidden" id="CreateCoursesDate" name="CreateCoursesDate" value=""  /> 
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+			<!-- popup alert Fill all question -->
+			<div id="popupAlertFillAll" class="popOverlayAlert">
+				<div id="popupFillAll" class="popupAlertFillAllportrait">
+					<a class="active" id="btnCloseAlertFillAll"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please complete all section.</h3>
+					
+
+				</div>
+			</div>
+
+		</div>
+	</script>
+	
+			<!-- ****** course-Report ****** -->
+	<script id="coursesReport" type="text/template">
+		<div>
+		<div id="navbar">
+			<a class="" id="backtocoursespickpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+<br>
+<form>
+<div id="btnCenter">
+<div name="btnExport" id="btnExport" class="btn_primary"><a>Export to Excel</a></div><br><br>
+</div>
+<p class="positionP"><strong>Participant</strong></p>
+
+<div id="ResultParticipant">
+<table rules="all" id="reporttable" class="reporttablesize">
+<tr class="reporttitlecolor"><td class="size"><strong class="txtblack">id</strong></td>
+	<td class="size"><strong class="txtblack">q1</strong></td>
+	<td class="size"><strong class="txtblack">q1_1</strong></td>
+	<td class="size"><strong class="txtblack">q1_2</strong></td>
+	<td class="size"><strong class="txtblack">q1_3</strong></td>
+	<td class="size"><strong class="txtblack">q1_4</strong></td>
+	<td class="size"><strong class="txtblack">q1_5</strong></td>
+	<td class="size"><strong class="txtblack">q1_5_C_g</strong></td>
+	<td class="size"><strong class="txtblack">q1_5_C_b</strong></td>
+	<td class="size"><strong class="txtblack">q2_1</strong></td>
+	<td class="size"><strong class="txtblack">q2_2</strong></td>
+	<td class="size"><strong class="txtblack">q2_3</strong></td>
+	<td class="size"><strong class="txtblack">q2_4</strong></td>
+	<td class="size"><strong class="txtblack">q2_5</strong></td>
+	<td class="size"><strong class="txtblack">q2_5_C</strong></td>
+	<td class="size"><strong class="txtblack">q3</strong></td>
+	<td class="size"><strong class="txtblack">DateCreateFeedback</strong></td>
+	<td class="size"><strong class="txtblack">courseTitle</strong></td>
+	<td class="size"><strong class="txtblack">Course_id</strong></td>
+	<td class="size"><strong class="txtblack">Emp_no_create</strong></td>
+</tr>
+
+</table>
+</div>
+<br><br>
+<div id="btnCenter">
+<div name="btnExportSupervisor" id="btnExportSupervisor" class="btn_primary"><a>Export to Excel</a></div><br><br>
+</div>
+
+<p class="positionS"><strong>Supervisor</strong></p>
+
+<div id="ResultSupervisor">
+<table rules="all" id="reportsupervisortable" class="reporttablesize">
+<tr class="reporttitlecolor"><td class="size"><strong class="txtblack">id</strong></td>
+	<td class="size"><strong class="txtblack">q1</strong></td>
+	<td class="size"><strong class="txtblack">q1_1</strong></td>
+	<td class="size"><strong class="txtblack">q1_2</strong></td>
+	<td class="size"><strong class="txtblack">q1_3</strong></td>
+	<td class="size"><strong class="txtblack">q1_4</strong></td>
+	<td class="size"><strong class="txtblack">q1_5</strong></td>
+	<td class="size"><strong class="txtblack">q1_5_C_g</strong></td>
+	<td class="size"><strong class="txtblack">q1_5_C_b</strong></td>
+	<td class="size"><strong class="txtblack">q2_1</strong></td>
+	<td class="size"><strong class="txtblack">q2_2</strong></td>
+	<td class="size"><strong class="txtblack">q2_3</strong></td>
+	<td class="size"><strong class="txtblack">q2_4</strong></td>
+	<td class="size"><strong class="txtblack">q2_5</strong></td>
+	<td class="size"><strong class="txtblack">q2_5_C</strong></td>
+	<td class="size"><strong class="txtblack">DateCreateFeedback</strong></td>
+	<td class="size"><strong class="txtblack">courseTitle</strong></td>
+	<td class="size"><strong class="txtblack">Course_id</strong></td>
+	<td class="size"><strong class="txtblack">Emp_no_create</strong></td>
+</tr>
+</table>
+</div>
+<br><br>
+<div id="btnCenter">
+<div name="btnXReport" id="btnXReport" class="btn_secondary"><a>Cancel</a></div>
+</div>
+<br><br>
+</form>
+</div>
+		</div>
+	</script>
+
+			<!-- ****** course-Report-summary ****** -->
+	<script id="coursesReportsummary" type="text/template">
+		<div>
+		<div id="navbar">
+			<a class="" id="backtocoursespickpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+<br>
+<form>
+<div id="btnCenter">
+<div name="btnExportsummary" id="btnExportsummary" class="btn_primary"><a>Export to Excel</a></div><br><br>
+</div>
+
+
+<div id="ResultParticipantsummary">
+</div>
+<br><br>
+
+<div id="btnCenter">
+<div name="btnExportSupervisorsummary" id="btnExportSupervisorsummary" class="btn_primary"><a>Export to Excel</a></div><br><br>
+</div>
+
+<div id="ResultSupervisorsummary">
+</div>
+<br><br>
+
+
+<div id="btnCenter">
+<div name="btnXReportsummary" id="btnXReportsummary" class="btn_secondary"><a>Cancel</a></div>
+</div>
+<br><br>
+</form>
+</div>
+		</div>
+	</script>
+	
+		<!-- ****** course-QuestionP ****** -->
+	<script id="coursesQuestionP" type="text/template">
+
+		<div>
+		<div id="navbar">
+			<a class="" id="backtoPcoursespositionpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+
+<div class="main">
+<h3>TRAINING EVALUATION FORM</h3>
+<!-- Detail orientation container-->
+				<div>
+					<form id="">
+						<table id="selectionDetail" class="selectionDetailportrait">
+							<tr>
+								<td id="courseEvaluationTitle"></td>
+								<td id="trainerNameShow"></td>
+							</tr>
+							<tr>
+								<td id="date_timeCourseShow"></td>
+								<td id="venueCourseShow"></td>
+							</tr>
+						</table>
+						<input type="hidden" id="courseEvaluationTitledb" value=""> 
+						<input type="hidden" id="courseEvaluationTitleIDdb" value=""> 
+					</form>
+				</div>
+
+<!-- Ealuation form -->
+<div>
+<form>
+<p class="positionPsentence">Please pick the extent you agree or disagree with each statement and provide your comment using the scale.<br>
+<em>Sila tandakan samada anda bersetuju atau tidak setuju dengan setiap kenyataan dan sila beri komen anda dengan menggunakan skala berikut.</em></p>
+<br>
+
+						<table rules="all" class="ScaleBorder">
+							<tr>
+								<td class="size">Strongly Disagree<br><em>Sangat Tidak Setuju</em>
+								</td>
+								<td class="size">Disagree<br><em>Tidak Setuju</em>
+								</td>
+								<td class="size">Neutral<br><em>Sederhana</em>
+								</td>
+								<td class="size">Agree<br><em>Setuju</em>
+								</td>
+								<td class="size">Strongly Agree<br><em>Sangat Setuju</em>
+								</td>
+							</tr>
+							<tr>
+								<td align="">1-2</td>
+								<td align="">3-4</td>
+								<td align="">5-6</td>
+								<td align="">7-8</td>
+								<td align="">9-10</td>
+							</tr>
+						</table>
+<br>
+<br>
+<!--Participant-->
+<div id="Question_Participant">							
+<p class="positionP"><strong class="txtblack">Participant</strong></p>
+
+<table class="Pquestion1">
+<tr><td><strong><ol><li class="q1" style="list-style-type: none">
+On a scale from 1-10, what is your overall rating for this program?
+</li></ol></strong></td></tr>
+<tr><td><ol><li style="list-style-type: none">
+<div class="spaceRadioBtnportrait">
+<input type="radio" name="P_Pick_Q1" value="1" id="P_Pick_Q1_1"><label for="P_Pick_Q1_1"><div class="top">1</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="2" id="P_Pick_Q1_2"><label for="P_Pick_Q1_2"><div class="top">2</div><span></span></label> 
+<input type="radio" name="P_Pick_Q1" value="3" id="P_Pick_Q1_3"><label for="P_Pick_Q1_3"><div class="top">3</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="4" id="P_Pick_Q1_4"><label for="P_Pick_Q1_4"><div class="top">4</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="5" id="P_Pick_Q1_5"><label for="P_Pick_Q1_5"><div class="top">5</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="6" id="P_Pick_Q1_6"><label for="P_Pick_Q1_6"><div class="top">6</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="7" id="P_Pick_Q1_7"><label for="P_Pick_Q1_7"><div class="top">7</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="8" id="P_Pick_Q1_8"><label for="P_Pick_Q1_8"><div class="top">8</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="9" id="P_Pick_Q1_9"><label for="P_Pick_Q1_9"><div class="top">9</div><span></span></label>
+<input type="radio" name="P_Pick_Q1" value="10" id="P_Pick_Q1_10"><label for="P_Pick_Q1_10"><div class="top">10</div><span></span></label>
+</div>
+</li></ol></td></tr>
+</table>
+<br>
+
+<table class="Pquestion1_2">
+<tr><td><ol><li style="list-style-type: none">
+<div id="P_q1_2_if_yes">Please select any of the following statement.</div>
+</li></ol></td></tr>
+<tr><td><ol><li style="list-style-type: none"><table  id="" class="PositionBtnportrait">
+<!--<tr><td><input type="radio" name="P_Pick_Q2" value="yes" id="P_Pick_Q1_2_y" ><label for="P_Pick_Q2_y" class="not-allowed"><div class="right"class="not-allowed" ><span></span>Yes (Overall scoring is 8 and above)</div></label></td></tr>-->
+<tr><td><table id="P_q1_2_if_yes1" class="Pquestion2">
+<input type="hidden" name="P_Pick_Q1_2" value="0" />
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox"  name="P_Pick_Q1_2" value="1" id="P_Pick_Q1_2_1"><label for="P_Pick_Q1_2_1"><div class="right"><span ></span>The course content matched the learning objectives.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q1_2" value="2" id="P_Pick_Q1_2_2"><label for="P_Pick_Q1_2_2"><div class="right"><span ></span>Instructor was engaging and manage the dynamics of the participant well.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q1_2" value="3" id="P_Pick_Q1_2_3"><label for="P_Pick_Q1_2_3"><div class="right"><span ></span>Instructor able to make complex topics easy to understand.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q1_2" value="4" id="P_Pick_Q1_2_4"><label for="P_Pick_Q1_2_4"><div class="right"><span ></span>There were sufficient activities provided to enhance the learning.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q1_2" value="5" id="P_Pick_Q1_2_5"><label for="P_Pick_Q1_2_5" ><div class="right"><span ></span>Others</div></label></td></tr>
+<tr><td><ol><li style="list-style-type: none"><textarea name="P_Pick_Q1_2_5_comment" value="" id="P_Pick_Q1_2_5_comment" class="textareasizeportrait"></textarea></li></ol></tr></td>
+</table></td></tr>
+<!--<tr><td><input type="radio" name="P_Pick_Q2" value="no" id="P_Pick_Q2_n"><label for="P_Pick_Q2_n"><div class="right"><span></span>No (Overall scoring is 7 and below)</div></label></td></tr>-->
+<tr><td><ol><li style="list-style-type: none"><div id="P_Pick_Q1_2_no">Please provide the reason</div></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><textarea name="P_Pick_Q1_2_no_comment" value="" id="P_Pick_Q1_2_no_comment" class="textareasizeportrait1"></textarea></li></ol></tr></td>
+</table></li></ol></td></tr>
+</table>
+
+<table class="Pquestion2">
+<tr><td><strong><ol><li class="q2" style="list-style-type: none">
+What is my improvement plan after training?</li></ol></strong></td></tr>
+<tr><td><ol><li style="list-style-type: none"><table  id="" class="PositionBtnportrait">
+<input type="hidden" name="P_Pick_Q2" value="0" />
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q2" value="1" id="P_Pick_Q2_1"><label for="P_Pick_Q2_1"><div class="right"><span></span>I am able to perform my tasks by using the tools and techniques I have learned in class.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q2" value="2" id="P_Pick_Q2_2"><label for="P_Pick_Q2_2"><div class="right"><span></span>I have positive mindset of performing my task after training.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q2" value="3" id="P_Pick_Q2_3"><label for="P_Pick_Q2_3"><div class="right"><span></span>I have more ideas on how to improve my task after training.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q2" value="4" id="P_Pick_Q2_4"><label for="P_Pick_Q2_4"><div class="right"><span></span>I am committed in putting learning into application after the training.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="P_Pick_Q2" value="5" id="P_Pick_Q2_5"><label for="P_Pick_Q2_5"><div class="right"><span></span>Others / specify specific plans</div></label></tr></td>
+<tr><td><ol><li style="list-style-type: none"><textarea name="P_Pick_Q2_comment" value="" id="P_Pick_Q2_comment" class="textareasizeportrait1"></textarea></li></ol></tr></td>
+</table></li></ol></td></tr>
+</table>
+
+<table class="Pquestion3">
+<tr><td><strong><ol><li class="q3" style="list-style-type: none">
+When do i start the improvement plan?</li></ol></strong></td></tr>
+<tr><td><ol><li style="list-style-type: none"><table  id="" class="PositionBtnportrait1">
+<tr><td><ol><li style="list-style-type: none"><input type="radio" name="P_Pick_Q3_months" value="3" id="P_Pick_Q3_3m"><label for="P_Pick_Q3_3m"><div class="right"><span></span>Short term (First 3 months)</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="radio" name="P_Pick_Q3_months" value="6" id="P_Pick_Q3_6m"><label for="P_Pick_Q3_6m"><div class="right"><span></span>Mid term (Within 6 months)</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="radio" name="P_Pick_Q3_months" value="12" id="P_Pick_Q3_12m"><label for="P_Pick_Q3_12m"><div class="right"><span></span>Long term (Within 12 months)</div></label></tr></td></li></ol>
+</table></li></ol></td></tr>
+</table>
+
+<div class="btnbackground">
+<div id="btnCenter">
+<br>
+<br>
+<div name="P_btnCanceldata" id="P_btnCanceldata" class="btn_secondary"><a>Cancle</a></div>&nbsp;
+<div name="P_btnSubmitdata" id="P_btnSubmitdata" class="btn_primary"><a ></a>Submit</div>
+<br>
+<br>
+</div>
+<br>
+<br>
+<br>
+</div>
+</div>
+
+</div> 
+</div>
+
+			<!-- popup login form -->
+			<div id="popUp" class="popOverlay">
+				<div id="popLogin" class="poploginportrait">
+					<a class="active" id="btnClose"><img class="btnpatternClose" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please enter your credentials (Windows
+						account) to authenticate the submission.</h3>
+					<span id="errmsg"></span><span id="errmsgs"></span> <br /> <label>Employee ID : </label> <input
+						type="text" spellcheck="false" autocomplete="off" autocorrect="off"
+						id="Employee_no" name="Employee_no" value=""
+						placeholder="e.g 550133" /> <br /> <br /> <label>Identity
+						Card : </label> <input type="text" spellcheck="false" autocomplete="off"
+						autocorrect="off" id="password" name="password" value=""
+						placeholder="e.g 901103075634" /><br /> <br />
+					<div class="btnpopupposition">
+						<div name="btnXLog" id="btnXLog" class="btn_secondary">
+						<a>Cancle</a></div>&nbsp; 
+						<div name="btnLogin" id="btnLogin" class="btn_primary">
+						<a>Submit</a></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- popup alert answers all question -->
+			<div id="popupAlertAnswersAll" class="popOverlayAlert">
+				<div id="popupAnswersAll" class="popupAlertAnswersAllportrait">
+					<a class="active" id="btnCloseAlertAnswersAll"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please complete all the questions.</h3>
+					
+
+				</div>
+			</div>
+			
+						
+			<!-- popup alert wrong password-->
+			<div id="popupAlertWrongPassword" class="popOverlayAlert">
+				<div id="popupWrongPassword" class="popupAlertWrongPasswordportrait">
+					<a class="active" id="btnCloseAlertWrongPassword"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Invalid Employee ID or Identity
+						Card.</h3>
+					
+
+				</div>
+			</div>
+			
+						
+			<!-- popup alert insert passwords -->
+			<div id="popUpAlertInsertPassword" class="popOverlayAlert">
+				<div id="popUpInsertPassword" class="popUpAlertInsertPasswordportrait">
+					<a class="active" id="btnCloseAlertInsertPassword"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br> 
+					<h3 class="txtblack">Please insert Employee ID and Identity
+						Card.</h3>
+					
+
+				</div>
+			</div>
+
+</form>		
+</div>
+		</div>
+	</script>
+
+		<!-- ****** course-QuestionS ****** -->
+	<script id="coursesQuestionS" type="text/template">
+
+		<div>
+		<div id="navbar">
+			<a  class="" id="backtoScoursespositionpage"><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+<div class="main">
+<h3>TRAINING EVALUATION FORM</h3>
+<!-- Detail orientation container-->
+				<div>
+					<form id="">
+						<table id="selectionDetail" class="selectionDetailportrait">
+							<tr>
+								<td id="courseEvaluationTitle"></td>
+								<td id="trainerNameShow"></td>
+							</tr>
+							<tr>
+								<td id="date_timeCourseShow"></td>
+								<td id="venueCourseShow"></td>
+							</tr>
+						</table>
+						<input type="hidden" id="courseEvaluationTitledb" value=""> 
+						<input type="hidden" id="courseEvaluationTitleIDdb" value=""> 
+					</form>
+				</div>
+
+<!-- Ealuation form -->
+<div>
+<form>
+<p class="positionPsentence">Please pick the extent you agree or disagree with each statement and provide your comment using the scale.<br>
+<em>Sila tandakan samada anda bersetuju atau tidak setuju dengan setiap kenyataan dan sila beri komen anda dengan menggunakan skala berikut.</em></p>
+<br>
+
+						<table rules="all" class="ScaleBorder">
+							<tr>
+								<td class="size">Strongly Disagree<br><em>Sangat Tidak Setuju</em>
+								</td>
+								<td class="size">Disagree<br><em>Tidak Setuju</em>
+								</td>
+								<td class="size">Neutral<br><em>Sederhana</em>
+								</td>
+								<td class="size">Agree<br><em>Setuju</em>
+								</td>
+								<td class="size">Strongly Agree<br><em>Sangat Setuju</em>
+								</td>
+							</tr>
+							<tr>
+								<td align="">1-2</td>
+								<td align="">3-4</td>
+								<td align="">5-6</td>
+								<td align="">7-8</td>
+								<td align="">9-10</td>
+							</tr>
+						</table>
+<br>
+<br> 
+<!--Supervisor-->
+<div id="Question_Supervisor">
+<p class="positionS"><strong class="txtblack">Supervisor</strong></p>
+
+<table class="Squestion1">
+<tr><td><strong><ol><li class="q1" style="list-style-type: none">
+On the scale from 1 to 10, what is my overall rating for my employee's improvement after completed the training.
+</li></ol></strong></td></tr>
+<tr><td><ol><li style="list-style-type: none">
+<div class="spaceRadioBtnportrait">
+<input type="radio" name="S_Pick_Q1" value="1" id="S_Pick_Q1_1"><label for="S_Pick_Q1_1"><div class="top">1</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="2" id="S_Pick_Q1_2"><label for="S_Pick_Q1_2"><div class="top">2</div><span></span></label> 
+<input type="radio" name="S_Pick_Q1" value="3" id="S_Pick_Q1_3"><label for="S_Pick_Q1_3"><div class="top">3</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="4" id="S_Pick_Q1_4"><label for="S_Pick_Q1_4"><div class="top">4</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="5" id="S_Pick_Q1_5"><label for="S_Pick_Q1_5"><div class="top">5</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="6" id="S_Pick_Q1_6"><label for="S_Pick_Q1_6"><div class="top">6</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="7" id="S_Pick_Q1_7"><label for="S_Pick_Q1_7"><div class="top">7</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="8" id="S_Pick_Q1_8"><label for="S_Pick_Q1_8"><div class="top">8</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="9" id="S_Pick_Q1_9"><label for="S_Pick_Q1_9"><div class="top">9</div><span></span></label>
+<input type="radio" name="S_Pick_Q1" value="10" id="S_Pick_Q1_10"><label for="S_Pick_Q1_10"><div class="top">10</div><span></span></label>
+</div>
+</li></ol></td></tr>
+</table>
+<br>
+
+<table class="Squestion1_2">
+<tr><td><ol><li style="list-style-type: none">
+<div id="S_q1_2_if_yes">Please select any of the following statement.</div>
+</li></ol></td></tr>
+<tr><td><ol><li style="list-style-type: none"><table  id="" class="PositionBtnportrait">
+<!--<tr><td><input type="radio" name="S_Pick_Q2" value="yes" id="S_Pick_Q2_y" ><label for="S_Pick_Q2_y" class="not-allowed"><div class="right"class="not-allowed" ><span></span>Yes (Overall scoring is 8 and above)</div></label></td></tr>-->
+<tr><td><table id="S_q1_2_if_yes1" class="Squestion2">
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox"  name="S_Pick_Q1_2" value="1" id="S_Pick_Q1_2_1"><label for="S_Pick_Q1_2_1"><div class="right"><span></span>Employee improved his or her knowledge after attending training.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q1_2" value="2" id="S_Pick_Q1_2_2"><label for="S_Pick_Q1_2_2"><div class="right"><span></span>Employee’s performance meet my expectation after attending training.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q1_2" value="3" id="S_Pick_Q1_2_3"><label for="S_Pick_Q1_2_3"><div class="right"><span></span>Employee able to implement the knowledge learned from training to their work.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q1_2" value="4" id="S_Pick_Q1_2_4"><label for="S_Pick_Q1_2_4"><div class="right"><span></span>Employee is committed in making a positive change after attending training.</div></label></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q1_2" value="5" id="S_Pick_Q1_2_5"><label for="S_Pick_Q1_2_5" ><div class="right"><span></span>Others</div></label></td></tr>
+<tr><td><ol><li style="list-style-type: none"><textarea name="S_Pick_Q1_2_5_comment" value="" id="S_Pick_Q1_2_5_comment" class="textareasizeportrait"></textarea></li></ol></tr></td>
+</table></td></tr>
+<!--<tr><td><input type="radio" name="S_Pick_Q2" value="no" id="S_Pick_Q2_n"><label for="S_Pick_Q2_n"><div class="right"><span></span>No (Overall scoring is 7 and below)</div></label></td></tr>-->
+<tr><td><ol><li style="list-style-type: none"><div id="S_Pick_Q1_2_no">Please provide the reason</div></td></tr></li></ol>
+<tr><td><ol><li style="list-style-type: none"><textarea name="S_Pick_Q1_2_no_comment" value="" id="S_Pick_Q1_2_no_comment" class="textareasizeportrait1"></textarea></li></ol></tr></td>
+</table></li></ol></td></tr>
+</table>
+
+
+<table class="Squestion2">
+<tr><td><strong><ol><li class="q2" style="list-style-type: none">
+What is your observation after your employee attended the training.
+</li></ol></strong></td></tr>
+<tr><td><ol><li style="list-style-type: none"><table  id="" class="PositionBtnportrait">
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q2" value="1" id="S_Pick_Q2_1"><label for="S_Pick_Q2_1"><div class="right"><span></span>Employee is able to perform their tasks by using the tools or techniques they have learned in class.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q2" value="2" id="S_Pick_Q2_2"><label for="S_Pick_Q2_2"><div class="right"><span></span>Employee has positive mindset of performing the task after attending training.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q2" value="3" id="S_Pick_Q2_3"><label for="S_Pick_Q2_3"><div class="right"><span></span>Employee’s working behavior has improved after attending training.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q2" value="4" id="S_Pick_Q2_4"><label for="S_Pick_Q2_4"><div class="right"><span></span>Employee’s have more ideas on how to get the task done after attending training.</div></label></tr></td></li></ol>
+<tr><td><ol><li style="list-style-type: none"><input type="checkbox" name="S_Pick_Q2" value="5" id="S_Pick_Q2_5"><label for="S_Pick_Q2_5"><div class="right"><span></span>Others / specify specific observation</div></label></tr></td>
+<tr><td><ol><li style="list-style-type: none"><textarea name="S_Pick_Q2_comment" value="" id="S_Pick_Q2_comment" class="textareasizeportrait1"></textarea></li></ol></tr></td>
+</table></li></ol></td></tr>
+</table>
+
+<div class="btnbackground">
+<div id="btnCenter">
+<br>
+<br>
+<div name="S_btnCanceldata" id="S_btnCanceldata" class="btn_secondary"><a>Cancle</a></div>&nbsp;
+<div name="S_btnSubmitdata" id="S_btnSubmitdata" class="btn_primary"><a ></a>Submit</div>
+<br>
+<br>
+</div>
+<br>
+<br>
+<br>
+</div>
+
+</div>
+
+</div>
+</div>
+
+			<!-- popup login form -->
+			<div id="popUp" class="popOverlay">
+				<div id="popLogin" class="poploginportrait">
+					<a class="active" id="btnClose"><img class="btnpatternClose" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please enter your credentials (Windows
+						account) to authenticate the submission.</h3>
+					<span id="errmsg"></span><span id="errmsgs"></span> <br /> <label>Employee ID : </label> <input
+						type="text" spellcheck="false" autocomplete="off" autocorrect="off"
+						id="Employee_no" name="Employee_no" value=""
+						placeholder="e.g 550133" /> <br /> <br /> <label>Identity
+						Card : </label> <input type="text" spellcheck="false" autocomplete="off"
+						autocorrect="off" id="password" name="password" value=""
+						placeholder="e.g 901103075634" /><br /> <br />
+					<div class="btnpopupposition">
+						<div name="btnXLog" id="btnXLog" class="btn_secondary">
+						<a>Cancle</a></div>&nbsp; 
+						<div name="btnLogin" id="btnLogin" class="btn_primary">
+						<a>Submit</a></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- popup alert answers all question -->
+			<div id="popupAlertAnswersAll" class="popOverlayAlert">
+				<div id="popupAnswersAll" class="popupAlertAnswersAllportrait">
+					<a class="active" id="btnCloseAlertAnswersAll"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Please complete all the questions.</h3>
+					
+
+				</div>
+			</div>
+			
+						
+			<!-- popup alert wrong password-->
+			<div id="popupAlertWrongPassword" class="popOverlayAlert">
+				<div id="popupWrongPassword" class="popupAlertWrongPasswordportrait">
+					<a class="active" id="btnCloseAlertWrongPassword"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br>
+					<h3 class="txtblack">Invalid Employee ID or Identity
+						Card.</h3>
+					
+
+				</div>
+			</div>
+			
+						
+			<!-- popup alert insert passwords -->
+			<div id="popUpAlertInsertPassword" class="popOverlayAlert">
+				<div id="popUpInsertPassword" class="popUpAlertInsertPasswordportrait">
+					<a class="active" id="btnCloseAlertInsertPassword"><img class="btnpatternCloseAlert" src="./img/icon/icon_close2.png"  alt="HTML5 Icon" ></img></a>
+					<br> <br> 
+					<h3 class="txtblack">Please insert Employee ID and Identity
+						Card.</h3>
+					
+
+				</div>
+			</div>
+ 
+
+</form>
+</div>
+		</div>
+	</script>
+	
+			<!-- ****** course-Thanks ****** -->
+	<script id="coursesThanks" type="text/template">
+
+		<div>
+		<div id="navbar">
+			<a hidden class="" id=""><img class="" src=""  alt="" ></img></a>
+			<center class="MyEvaluationpagetitlename">MyEvaluation</center>
+		</div>
+		
+		<form>
+		<div class="main">
+			<div id="">
+				<div id="" class="">
+					<h3><center>We appreciate your feedback and will use it to evaluate
+						changes and make improvements to our services.</center></h3>
+					<br> <br>
+					<div id="centerImg">
+						<center>
+							<img src="./img/thankyou.png" alt="HTML5 Icon" class="centerImg"></img>
+						</center>
+					</div>
+					<br>
+					<br>
+					<div>
+						<center>
+							<a id="linkbackhome" class="link">Go back Home</a> 						
+							</center>
+					</div>
+					<br>
+
+				</div>
+			</div>
+		</div>
+		</form>
+		</div>
+	</script>
+		
+	<script src="./lib/jquery.js"></script>
+	<script src="./lib/router.js"></script>
+	<script src="./lib/fastclick.js"></script>
+	<script src="./lib/handlebars.js"></script>
+	<script type="text/javascript" src="./js/coursesPickView.js"></script>
+	<script type="text/javascript" src="./js/coursesPositionView.js"></script>
+	<script type="text/javascript" src="./js/coursesAddView.js"></script>
+	<script type="text/javascript" src="./js/coursesReportView.js"></script>
+	<script type="text/javascript" src="./js/coursesReportsummaryView.js"></script>
+	<script type="text/javascript" src="./js/coursesPositionAdminView.js"></script>
+	<script type="text/javascript" src="./js/coursesQuestionPView.js"></script>
+	<script type="text/javascript" src="./js/coursesQuestionSView.js"></script>
+	<script type="text/javascript" src="./js/coursesThanksView.js"></script>
+	<script type="text/javascript" src="./js/TrainingEvaluationFrom.js"></script>
+</body>
+</html>

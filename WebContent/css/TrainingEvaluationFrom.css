@@ -1,0 +1,928 @@
+@charset "ISO-8859-1";
+/* *************************all page*********************** */
+/* body color */
+body {
+	background-color: #f2f2f2;	
+}
+
+/* form */
+form {
+	font-family: arial;
+	font-size: 16px;
+	border: 1px solid white;
+	border-radius: 0px;
+	padding: 5px 0px 5px 0px;
+	margin: 10px 10px 10px 10px;/* 15px;*/
+	width: auto;
+	background-color: white;
+	height: auto;
+}
+
+/*table*/
+table {
+	padding: 5px;
+	margin: 5px;
+}
+
+/*sub title*/
+h3{
+	font-size:16px;
+	margin:20px 5px 20px 5px;
+	padding-left:20px;
+	padding-right:20px;
+	text-justify: none;
+}
+
+/*------------navigation bar------------*/
+.MyEvaluationpagetitlename{
+ 	padding:  12px 10px 13px 10px; 
+	font-family: arial;
+	font-size: 20px;
+	color: white;
+}
+
+.header {
+  background-color: #00b482;
+  padding: 0px;
+  text-align: center;
+}
+
+#navbar {
+  background-color: #00b482;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding:  15px 10px 13px 10px; 
+  font-family: arial;
+  font-size: 16px;
+  cursor:pointer;
+}
+
+/*------------------popup-------------------*/
+/*background popup*/
+.popOverlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+}
+
+.popOverlayAlert {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+}
+
+/*button in popup position*/
+div.btnpopupposition{
+	margin-top:10px;
+}
+
+/* X button*/
+.btnpatternCloseAlert {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 140px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: none;
+	text-decoration: none;
+	background-color: white;
+	border: none;
+}
+
+.btnpatternClose {
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 150px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: none;
+	text-decoration: none;
+	background-color: white;
+	border: none;
+}
+
+/*button in popup*/
+#btnXLog{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+#btnLogin{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+#btnAdminXLog{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+#btnAdminLogin{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+/*text*/
+table.txtblack {
+	font-size: 16px;
+	color: black;
+	text-transform: none;
+}
+
+h3.txtblack{
+	padding:0px 15px 0px 15px;
+}
+
+input[type="text"], input[type="password"] {
+	display: inline;
+	width:200px;
+	height: 40px;
+	font-family: arial;
+	font-weight: normal;
+	margin: 5px 0px 5px 0px;
+}
+
+#Employee_no {
+	padding: 5px 5px;
+	font-size: 20px;
+}
+
+#Admin_no {
+	padding: 5px 5px;
+	font-size: 20px;
+}
+
+#password {
+	padding: 5px 5px;
+	font-size: 20px;
+}
+
+/*popup alert landscape*/
+#popupAnswersAll{
+	width: 380px;
+	height: 120px;
+}
+
+#popupWrongPassword{
+	width: 380px;
+	height: 120px;
+}
+
+#popUpInsertPassword{
+	width: 380px;
+	height: 120px;
+}
+
+/*popup alert portrait*/
+.popupAlertAnswersAllportrait{
+	padding-top: 0px;
+	background: white;
+	border-radius: 0px;
+	text-align: center;
+	z-index: 9;
+	font-family: arial;
+	font-size: 16px;
+	border: 1px solid white;
+}
+
+.popupAlertWrongPasswordportrait{
+	padding-top: 0px;
+	background: white;
+	border-radius: 0px;
+	text-align: center;
+	z-index: 9;
+	font-family: arial;
+	font-size: 16px;
+	border: 1px solid white;
+}
+
+.popUpAlertInsertPasswordportrait{
+	padding-top: 0px;
+	background: white;
+	border-radius: 0px;
+	text-align: center;
+	z-index: 9;
+	font-family: arial;
+	font-size: 16px;
+	border: 1px solid white;
+}
+
+#popLogin{
+	width: 400px;
+	height: 350px;
+}
+
+#AdminpopLogin{
+	width: 400px;
+	height: 350px;
+}
+
+/*portrait*/
+.poploginportrait {
+	padding-top: 0px;
+	background: white;
+	border-radius: 0px;
+	text-align: center;
+	z-index: 9;
+	font-family: arial;
+	font-size: 16px;
+	border: 1px solid white;
+}
+
+/*message for login number only */
+#errmsg {
+	color: red;
+}
+
+/*-----------------------------------------pick------------------------------------------*/
+div.pickdatebackground{
+	background-color:white;
+	width:95%;
+	min-height:120px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:5px;
+	margin-top:20px;
+	overflow: hidden;
+}
+
+.descriptionAction{
+	margin:0px 5px 20px 5px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+table.pickdatetable{
+	width:95%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+div.FristFilter,div.SecondFilter,div.ThirdFilter {
+  width: 300px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+div.FourthFilter{
+  width: 300px;
+  margin-right: 10px;
+}
+
+ol.BackgroundColorFilter{
+	 background-color:white;
+}
+
+/*button in filter*/
+#btnCancelFilter{
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+#imgbtnfilterYMD{
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+/*button in filter position*/
+div.btnfilterposition{
+	margin-top:38px;
+	margin-bottom:38px;
+}
+
+select{
+	width: 80%;
+	cursor:pointer;
+}
+
+option{
+	cursor:pointer;
+}
+
+/* div container portrait */
+.contner-blockportrait {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*button container for contner-block*/
+.bttn-container {
+	padding: 5px 0px 5px 0px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+	margin-bottom:20px;
+	width: 95%;
+	border-radius: 0px;
+	border: 1px solid white;
+	background-color: white;
+	min-height: 100px;
+	overflow: hidden;
+	display:block;
+	cursor: pointer;
+}
+
+div.bttn-container:hover {
+	background-color: white;
+}
+
+/*button for filter and not filter*/
+.imgbtnnext {
+	float: right;
+	margin: -20px 10px 0px 0px;
+}
+
+.btnXfilter{
+	cursor:pointer;
+}
+
+.imgbtnfilter{
+	cursor:pointer;
+}
+/*position of information show in container*/
+#OrienDatetime {
+	float: left;
+}
+
+#OrienVenue {
+	float: right;
+	padding: 0px 25px 0px 0px;
+}
+
+.OrienTrainer {
+	float: left;
+}
+
+#OrienCourse {
+	text-transform: none;
+	font-weight: 900px;
+	line-height: 1;
+	margin: 5px;
+	padding:5px 5px 5px 5px;
+	color: #00b482;
+	font-family: arial; 
+	font-size: 18px;
+	
+}
+
+p {
+	margin: 5px;
+	padding: 0px 5px 0px 5px;
+	font-family: arial;
+	font-size: 16px;
+	background-color: transparent;
+	text-justify: none;
+
+}
+
+body, h1, p {
+		text-align: left;
+}
+
+/*-----------------------sector for supervisor and participant-----------------------*/
+#btnSupervisor{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+}
+
+#btnParticipant{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+}
+#btnReport{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    padding-left:52px;
+    padding-right:52px;
+}
+
+#btnCreate{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    padding-left:52px;
+    padding-right:52px;
+}
+
+#btnXAdminposition{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    padding-left:52px;
+    padding-right:52px;
+}
+
+#btnXposition{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    padding-left:60px;
+    padding-right:60px;
+}
+/*-------------------report---------------------*/
+tr.reporttitlecolor{
+	background:#dfdfdf;
+}
+
+table.reporttablesize{
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid black;
+	text-align:center;	
+	width:90%;
+}
+
+#btnExport{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+#btnExportsummary{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+#btnExportSupervisor{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+#btnExportSupervisorsummary{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+#btnXReport{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+#btnXReportsummary{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+}
+
+.positionPsummary{
+	padding: 10px 0px 10px 0px;
+}
+
+.positionSsummary{
+	padding: 10px 0px 10px 0px;
+}
+
+.positionP_subtext{
+	padding: 5px 0px 5px 20px;
+}
+
+.positionS_subtext{
+	padding: 5px 0px 5px 20px;
+}
+
+#btnReportsummary{
+	margin-left:auto;
+	margin-right:auto;
+	padding-left: 16px;
+	padding-right: 16px;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+/*----------------------create courses--------------------------*/
+input[id="AddEmployee_no"],input[id="CreateCoursesTitle"],input[id="CreateCoursesVenue"],input[id="CreateCoursesStartTime"],input[id="CreateCoursesEndTime"],input[id="CreateCoursesDate"],input[id="CreateCoursesTrainer"]{
+	width:100% !important;
+}
+
+.labelposition{
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:20px;
+	margin-right:20px;	
+}
+
+.Addcourses{
+	margin:20px;
+}
+
+#Addcoursestablesize{
+	width:80%;
+}
+
+#btnCancelcreate{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#333;
+    baxkground-color:#dfdfdf;
+}
+
+#btnSubmitcreate{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+/*popup alert landscape*/
+#popupFillAll{
+	width: 380px;
+	height: 120px;
+}
+
+/*popup alert portrait*/
+.popupAlertFillAllportrait{
+	padding-top: 0px;
+	background: white;
+	border-radius: 0px;
+	text-align: center;
+	z-index: 9;
+	font-family: arial;
+	font-size: 16px;
+	border: 1px solid white;
+}
+/*----------------------question page----------------------*/
+/*sentences*/
+.positionP{
+		padding: 5px 20px 10px 10px;
+}
+
+.positionS{
+		padding: 5px 20px 10px 10px;
+}
+
+.positionPsentence{
+		padding: 0px 5px 0px 5px;
+}
+
+/* spacing for choice selected portrait */
+table.selectionDetailportrait {
+	margin: 0px auto;
+	width: 95%;
+}
+
+/* scale table  */
+table.ScaleBorder {
+	border: 1px solid black;
+	margin: 0px auto;
+	width: 70%;
+	text-align: center;
+	font-size: 16px;
+}
+
+td.size{
+	padding: 3px 3px 3px 3px;
+}
+
+/* section text */
+strong {
+	color: #00b482;
+}
+
+strong.txtblack {
+	color: black;
+}
+
+ol li.q1:before{
+    content: "Q" counter(elementcounter ) ".";
+    counter-increment:elementcounter 1;
+    margin-left: -30px;
+}
+
+ol li.q2:before{
+    content: "Q" counter(elementcounter ) ".";
+    counter-increment:elementcounter 2;
+    margin-left: -30px;
+}
+
+ol li.q3:before{
+    content: "Q" counter(elementcounter ) ".";
+    counter-increment:elementcounter 3;
+    margin-left: -30px;
+}
+
+input[type="checkbox"]+label span{
+	margin:1px 5px 5px -27px;
+}
+
+/* spacing for radio button scale portrait */
+table.spaceRadioBtnportrait {
+	text-align: center;
+	padding: 0 1px 0 10px;
+	width:100%;
+	display: block;
+}
+
+/*label on the right for button*/
+.right{
+	display: inline-block;
+	line-height:50px;
+}
+
+input[type="checkbox"]:checked+label {
+	color: #00b482;
+}
+
+input[type="radio"]:checked+label {
+	color: #00b482;
+}
+
+.spaceRadioBtnportrait label {
+    display: inline-block;
+    width: 9.5%;
+    height: 20px;
+    text-align: center;
+    vertical-align: top;
+    padding:15px 1px 15px 1px;
+}
+
+/* all button position portrait q1,q2 and q3*/
+table.PositionBtnportrait {
+	padding: 0 1px 0 10px;
+	width:100%;
+	margin-right:10px;
+}
+
+table.PositionBtnportrait1 {
+	padding: 0 1px 0 10px;
+	width:100%;
+	margin-left:-35px;
+	margin-right:10px;
+}
+
+/* size table for question participant*/
+table.Pquestion1{ 
+ 	width:95%;
+	padding: 0px 0px 0px 20px;
+} 
+
+table.Pquestion1_2{ 
+ 	width:95%; 
+	padding: 0px 0px 0px 20px;
+} 
+
+table.Pquestion2{ 
+ 	width:95%; 
+	padding: 0px 0px 0px 20px;
+} 
+
+table.Pquestion3{ 
+ 	width:95%; 
+	padding: 0px 0px 0px 20px;
+} 
+
+/* size table for question supervisor*/
+table.Squestion1{ 
+ 	width:95%;
+	padding: 0px 0px 0px 20px;
+} 
+
+table.Squestion1_2{ 
+ 	width:95%; 
+	padding: 0px 0px 0px 20px;
+} 
+
+table.Squestion2{ 
+ 	width:95%; 
+	padding: 0px 0px 0px 20px;
+} 
+
+/*textarea portrait */
+.textareasizeportrait {
+	width: 100%;
+	height: 100px;
+	font-family: arial;
+	font-weight: normal;
+	font-size:16px;
+	border:0;
+	border-radius: 0;
+	color: #00b482;
+	background-color: #f2f2f2;
+	margin:5px 0px 0px 0px;
+}
+
+.textareasizeportrait1 {
+	width: 90%;
+	height: 100px;
+	font-family: arial;
+	font-weight: normal;
+	font-size:16px;
+	border:0;
+	border-radius: 0;
+	color: #00b482;
+	background-color: #f2f2f2;
+	margin:5px 0px 0px 0px;
+}
+
+/*position form button submit and cancel */
+#S_btnCanceldata{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#333;
+    baxkground-color:#dfdfdf;
+}
+
+#S_btnSubmitdata{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+#P_btnCanceldata{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#333;
+    baxkground-color:#dfdfdf;
+}
+
+#P_btnSubmitdata{
+	margin-left:auto;
+	margin-right:auto;
+	border-radius: 0px;
+	overflow: hidden;
+	display:inline;
+	cursor: pointer;
+    width:60px;
+    height:20px;
+    color:#ffffff;
+    baxkground-color:#711e82;
+}
+
+#btnCenter {
+	text-align: center;
+	display: block;
+	margin: 5px;
+}
+
+.btnbackground{
+	margin:-15px 15px 10px 15px;
+	width: auto;
+	background-color: white;
+}
+
+/*--------------------thanks page------------------------*/
+/*image size*/
+img.centerImg {
+	width: 300px;
+	height: 300px;
+}
